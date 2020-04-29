@@ -4,7 +4,7 @@
 def valid_move?(board, index)
 
   def position_taken?(board,index)
-    board[index] != " " && board[index] != "" && board[index] != nil
+    board[index] == " " || board[index] == "" || board[index] == nil
   end
  index.between?(0,8) && position_taken?(board,index) == true
 
